@@ -1,0 +1,25 @@
+﻿<Application
+    x:Class="Glass_Cockpit.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Glass_Cockpit">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+
+                <!-- 
+                    Styles that define common aspects of the platform look and feel
+                    Required by Visual Studio project and item templates
+                 -->
+                <ResourceDictionary Source="Common/StandardStyles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <!-- ToggleSwitch Color -->
+            <SolidColorBrush x:Key="ToggleSwitchCurtainBackgroundThemeBrush" Color="DarkOrange" />
+            <SolidColorBrush x:Key="ToggleSwitchCurtainPointerOverBackgroundThemeBrush" Color="DarkOrange" />
+            <SolidColorBrush x:Key="ToggleSwitchCurtainPressedBackgroundThemeBrush" Color="DarkOrange" />
+            
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,44 @@
+﻿<Page
+    x:Class="Glass_Cockpit.Setup.ImportLocationPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Glass_Cockpit.Setup"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="DarkOrange">
+        <Grid VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,250,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            
+            <TextBlock Grid.Row="0" HorizontalAlignment="Center" Style="{StaticResource BaseTextBlockStyle}" FontSize="20">
+                Import Location
+            </TextBlock>
+            <TextBlock Grid.Row="1" HorizontalAlignment="Center" Style="{StaticResource BaseTextBlockStyle}">
+                Choose from where you'd like to import data files
+            </TextBlock>
+            <Button x:Name="splashButton" Grid.Row="2" HorizontalAlignment="Center" Margin="0,10,0,0" Click="selectFolder">
+                <Button.Content>
+                    Select a folder
+                </Button.Content>
+            </Button>
+            
+            <Grid.ChildrenTransitions>
+                <TransitionCollection>
+                    <EntranceThemeTransition IsStaggeringEnabled="False"/>
+                </TransitionCollection>
+            </Grid.ChildrenTransitions>
+        </Grid>
+        <Image x:Name="splashImage" Source="ms-appx:///Assets/SplashScreen.png" Height="300" Width="620" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Image.RenderTransform>
+                <TranslateTransform x:Name="imageTranslate" Y="-100" />
+            </Image.RenderTransform>
+        </Image>
+        <AppBarButton x:Name="backButton" Icon="Back" Height="95" Margin="10,46,10,0" Click="goBack"/>
+        <AppBarButton x:Name="forwardButton" Icon="Forward" Height="95" Margin="0,46,10,0" HorizontalAlignment="Right" Visibility="Collapsed" Click="goForward"/>
+    </Grid>
+</Page>
