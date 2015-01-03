@@ -33,7 +33,7 @@ namespace Glass_Cockpit
 
         private void navigateFiles(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(MainPage), this.appState);
+            this.Frame.Navigate(typeof(LoadPage), this.appState);
         }
 
         private void navigateSaved(object sender, RoutedEventArgs e)

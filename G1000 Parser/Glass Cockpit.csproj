@@ -131,10 +131,17 @@
     <Compile Include="ErrorsPage.xaml.cs">
       <DependentUpon>ErrorsPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
+    <Compile Include="LoadPage.xaml.cs">
+      <DependentUpon>LoadPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Flight.cs" />
+    <Compile Include="NavBar.xaml.cs">
+      <DependentUpon>NavBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NavButton.xaml.cs">
+      <DependentUpon>NavButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NavPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DataSettingsFlyout.xaml.cs">
       <DependentUpon>DataSettingsFlyout.xaml</DependentUpon>
@@ -202,6 +209,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="NavBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NavButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Setup\AutoLoadSettingPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -240,7 +255,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="MainPage.xaml">
+    <Page Include="LoadPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
