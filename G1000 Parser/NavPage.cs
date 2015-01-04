@@ -1,19 +1,20 @@
 ﻿using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Navigation;
 
 namespace Glass_Cockpit {
 	public class NavPage : Page {
 		protected AppState appState;
 
 		public NavPage() {
-			//Loaded += NavPage_Loaded;
+
 		}
 
-		//void NavPage_Loaded(object sender, Windows.UI.Xaml.RoutedEventArgs e) {
-		//	AppBar navBar = new AppBar();
-		//	navBar.Content = new NavBar();
-		//	this.TopAppBar = navBar;
-		//}
+		protected override void OnNavigatedTo(NavigationEventArgs e) {
+			if (e.Parameter is AppState) {
+				this.appState = (AppState)e.Parameter;
+			}
+		}
 
 		internal void navigateHome(object sender, RoutedEventArgs e) {
 			this.Frame.Navigate(typeof(MainPage), this.appState);

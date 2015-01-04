@@ -9,12 +9,6 @@ namespace Glass_Cockpit {
 			this.InitializeComponent();
 		}
 
-		protected override void OnNavigatedTo(NavigationEventArgs e) {
-			if (e.Parameter is AppState) {
-				this.appState = (AppState)e.Parameter;
-			}
-		}
-
 		private void onLoaded(object sender, RoutedEventArgs e) {
 			this.DataContext = this.appState;
 		}
