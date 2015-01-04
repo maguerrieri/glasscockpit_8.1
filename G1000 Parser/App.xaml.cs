@@ -46,7 +46,7 @@ namespace Glass_Cockpit {
 				}
 
 				if (rootFrame.Content == null) {
-					if (!rootFrame.Navigate(typeof(LoadPage))) { // When the navigation stack isn't restored navigate to the first page, configuring the new page by passing required information as a navigation parameter
+					if (!rootFrame.Navigate(typeof(MainPage))) { // When the navigation stack isn't restored navigate to the first page, configuring the new page by passing required information as a navigation parameter
 						throw new Exception("Failed to create initial page");
 					}
 				}
@@ -65,16 +65,14 @@ namespace Glass_Cockpit {
 			} else {
 				Frame rootFrame = Window.Current.Content as Frame;
 
-				if (rootFrame == null) // Do not repeat app initialization when the Window already has content, just ensure that the window is active
-                {
+				if (rootFrame == null) { // Do not repeat app initialization when the Window already has content, just ensure that the window is active
 					rootFrame = new Frame(); // Create a Frame to act as the navigation context and navigate to the first page
 
 					Window.Current.Content = rootFrame; // Place the frame in the current Window
 				}
 
 				if (rootFrame.Content == null) {
-					if (!rootFrame.Navigate(typeof(LoadPage))) // When the navigation stack isn't restored navigate to the first page, configuring the new page by passing required information as a navigation parameter
-                    {
+					if (!rootFrame.Navigate(typeof(MainPage))) { // When the navigation stack isn't restored navigate to the first page, configuring the new page by passing required information as a navigation parameter
 						throw new Exception("Failed to create initial page");
 					}
 				}

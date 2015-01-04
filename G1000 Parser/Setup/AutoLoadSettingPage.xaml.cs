@@ -41,7 +41,7 @@ namespace Glass_Cockpit.Setup {
 		private async void goForward(object sender, RoutedEventArgs e) {
 			await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () => {
 				var frame = new Frame();
-				frame.Navigate(typeof(LoadPage), this.state);
+				frame.Navigate(typeof(MainPage), this.state);
 				Window.Current.Content = frame;
 			});
 		}
@@ -51,7 +51,7 @@ namespace Glass_Cockpit.Setup {
 
 			await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () => {
 				var frame = new Frame();
-				frame.Navigate(typeof(LoadPage), state);
+				frame.Navigate(typeof(MainPage), state);
 				Window.Current.Content = frame;
 			});
 		}

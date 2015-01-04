@@ -48,15 +48,10 @@
 
     <Grid Background="DarkOrange">
         <Button x:Name="splashButton" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,250,0,0" Opacity="0" Click="nextPageClicked">
-            <Button.Content>
-                Get Started
-            </Button.Content>
-            <!--<Button.Transitions>
-                <TransitionCollection>
-                    <EntranceThemeTransition />
-                </TransitionCollection>
-            </Button.Transitions>-->
-            <Button.RenderTransform>
+			<Button.Content>
+				Get Started
+			</Button.Content>
+			<Button.RenderTransform>
                 <TranslateTransform x:Name="buttonTranslate" X="0" />
             </Button.RenderTransform>
         </Button>
