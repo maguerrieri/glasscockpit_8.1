@@ -18,15 +18,15 @@
 		<Canvas Background="DarkOrange" Grid.Row="0" Margin="0,-2,0,0"/>
 		<TextBlock FontSize="18" Margin="10,10,10,0" Grid.Row="1">GLASS COCKPIT</TextBlock>
 		<Grid Grid.Row="2">
-			<local:NavButton labelText="Home" iconName="Home" Margin="10" />
+			<local:NavButton Text="Home" Symbol="Home" Margin="0" Click="homeClicked" />
 		</Grid>
 		<Grid Grid.Row="2" HorizontalAlignment="Right">
 			<Grid.ColumnDefinitions>
 				<ColumnDefinition Width="Auto" />
 				<ColumnDefinition Width="Auto" />
 			</Grid.ColumnDefinitions>
-			<local:NavButton labelText="Errors" iconName="Cancel" Margin="10" Grid.Column="0"/>
-			<local:NavButton labelText="Files" iconName="OpenLocal" Margin="10" Grid.Column="1"/>
+			<local:NavButton Text="Errors" Symbol="Cancel" Margin="0" Grid.Column="0" Click="errorsClicked"/>
+			<local:NavButton Text="Files" Symbol="OpenLocal" Margin="0" Grid.Column="1" Click="filesClicked"/>
 		</Grid>
 	</Grid>
 </AppBar>

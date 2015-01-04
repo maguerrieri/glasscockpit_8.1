@@ -19,7 +19,12 @@
             <SolidColorBrush x:Key="ToggleSwitchCurtainBackgroundThemeBrush" Color="DarkOrange" />
             <SolidColorBrush x:Key="ToggleSwitchCurtainPointerOverBackgroundThemeBrush" Color="DarkOrange" />
             <SolidColorBrush x:Key="ToggleSwitchCurtainPressedBackgroundThemeBrush" Color="DarkOrange" />
-            
-        </ResourceDictionary>
+
+			<SolidColorBrush x:Key="ButtonBackgroundThemeBrush" Color="DarkOrange" />
+			<SolidColorBrush x:Key="ButtonPointerOverBackgroundThemeBrush" Color="DarkOrange" />
+			<SolidColorBrush x:Key="ButtonPressedBackgroundThemeBrush" Color="Orange" />
+			<SolidColorBrush x:Key="ButtonPressedForegroundThemeBrush" Color="White" />
+
+		</ResourceDictionary>
     </Application.Resources>
 </Application>

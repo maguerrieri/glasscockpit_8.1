@@ -1,4 +1,4 @@
-﻿<Page
+﻿<local:NavPage
     x:Class="Glass_Cockpit.LoadPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -674,7 +674,7 @@
 	</Grid>
 	
 	<Page.TopAppBar>
-		<local:NavBar />
+		<local:NavBar Home_Click="navigateHome" Errors_Click="navigateErrors" Files_Click="navigateFiles" />
 	</Page.TopAppBar>
 
 	<Page.BottomAppBar>
@@ -704,4 +704,4 @@
         </CommandBar>-->
 	</Page.BottomAppBar>
 
-</Page>
+</local:NavPage>

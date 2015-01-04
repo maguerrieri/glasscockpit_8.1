@@ -21,8 +21,20 @@ namespace Glass_Cockpit {
 			this.InitializeComponent();
 		}
 
-		private void homeClicked(object sender, PointerRoutedEventArgs e) {
+		public event RoutedEventHandler Home_Click;
+		public event RoutedEventHandler Errors_Click;
+		public event RoutedEventHandler Files_Click;
 
+		private void homeClicked(object sender, RoutedEventArgs e) {
+			this.Home_Click.Invoke(sender, e);
+		}
+
+		private void errorsClicked(object sender, RoutedEventArgs e) {
+			this.Errors_Click.Invoke(sender, e);
+		}
+
+		private void filesClicked(object sender, RoutedEventArgs e) {
+			this.Files_Click.Invoke(sender, e);
 		}
 	}
 }

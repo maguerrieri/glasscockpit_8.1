@@ -21,7 +21,7 @@ namespace Glass_Cockpit {
 			this.InitializeComponent();
 		}
 
-		public string labelText {
+		public string Text {
 			get {
 				return this.label.Text;
 			}
@@ -29,7 +29,7 @@ namespace Glass_Cockpit {
 				this.label.Text = value;
 			}
 		}
-		public Symbol iconName {
+		public Symbol Symbol {
 			get {
 				return this.icon.Symbol;
 			}

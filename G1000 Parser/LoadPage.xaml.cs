@@ -11,9 +11,8 @@ namespace Glass_Cockpit {
 	/// <summary>
 	/// An empty page that can be used on its own or navigated to within a Frame.
 	/// </summary>
-	public sealed partial class LoadPage : Page {
+	public sealed partial class LoadPage : NavPage {
 		private static bool firstLoad = true;
-		private AppState appState;
 
 		public LoadPage() {
 			this.InitializeComponent();
@@ -38,14 +37,6 @@ namespace Glass_Cockpit {
 			}
 		}
 
-		private void navigateErrors(object sender, RoutedEventArgs e) {
-			this.Frame.Navigate(typeof(ErrorsPage), this.appState);
-		}
-
-		private void navigateSaved(object sender, RoutedEventArgs e) {
-			this.Frame.Navigate(typeof(ErrorsPage), this.appState);
-		}
-
 		void MainPage_CommandsRequested(SettingsPane sender, SettingsPaneCommandsRequestedEventArgs args) {
 			SettingsCommand updateSetting = new SettingsCommand("DataSettings", "Data Settings", (handler) => {
 					DataSettingsFlyout settingsFlyout = new DataSettingsFlyout(this.appState);
@@ -64,10 +55,6 @@ namespace Glass_Cockpit {
 			if (!this.appState.running) {
 				await this.appState.refresh();
 			}
-		}
-
-		private void homeClicked(object sender, Windows.UI.Xaml.Input.PointerRoutedEventArgs e) {
-
 		}
 	}
 

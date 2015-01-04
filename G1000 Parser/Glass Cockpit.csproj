@@ -135,6 +135,9 @@
       <DependentUpon>LoadPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Flight.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="NavBar.xaml.cs">
       <DependentUpon>NavBar.xaml</DependentUpon>
     </Compile>
@@ -206,6 +209,10 @@
     <Content Include="Common\ReadMe.txt" />
     <None Include="Package.StoreAssociation.xml" />
     <Page Include="ErrorsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
