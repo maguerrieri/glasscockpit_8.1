@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
-  <Identity Name="5468Igneus.GlassCockpit" Publisher="CN=846D3F41-978E-4086-8EDA-3802DEC90366" Version="1.2.0.0" />
+  <Identity Name="5468Igneus.GlassCockpit" Publisher="CN=846D3F41-978E-4086-8EDA-3802DEC90366" Version="1.2.0.1" />
   <Properties>
     <DisplayName>Glass Cockpit</DisplayName>
     <PublisherDisplayName>Igneus</PublisherDisplayName>
